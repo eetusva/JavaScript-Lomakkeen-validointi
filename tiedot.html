@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiedot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Käyttäjän tiedot:</h1>
+    <div class="tiedot">
+        Käyttäjä ID on: <span id="userid">ID</span><br><br>
+        Käyttäjä Salasana on: <span id="passwrd">Salasana</span><br><br>
+        Käyttäjä Nimi on: <span id="name">Nimi</span><br><br>
+        Käyttäjä Osoite on: <span id="address">Osoite</span><br><br>
+        Käyttäjä Maa on: <span id="country">Maa</span><br><br>
+        Käyttäjä Postinumero on: <span id="postalcode">Postinumero</span><br><br>
+        Käyttäjä Sähköposti on: <span id="email">Sähköposti</span><br><br>
+        Käyttäjä Sukupuoli on: <span id="gender">Sukupuoli</span><br><br>
+        Käyttäjä Kieli on: <span id="language">Kieli</span><br><br>
+        Lisätietoja: <span id="moreinfo">Lisätietoja</span><br>
+    </div>
+
+    <script>
+        document.getElementById("userid").innerHTML = localStorage.getItem("userId");
+        document.getElementById("passwrd").innerHTML = localStorage.getItem("passWrd");
+        document.getElementById("name").innerHTML = localStorage.getItem("userName");
+        document.getElementById("address").innerHTML = localStorage.getItem("userAddress");
+        document.getElementById("country").innerHTML = localStorage.getItem("country");
+        document.getElementById("postalcode").innerHTML = localStorage.getItem("postalCode");
+        document.getElementById("email").innerHTML = localStorage.getItem("eMail");
+        document.getElementById("gender").innerHTML = localStorage.getItem("gender");
+        document.getElementById("language").innerHTML = localStorage.getItem("language");
+        document.getElementById("moreinfo").innerHTML = localStorage.getItem("moreInfo");
+
+
+    </script>
+</body>
+
+</html>
